@@ -4,9 +4,15 @@ const student = {
         class : 12,
      };
     
-    function getProperties(student) {
-        return [student.id, student.name, student.class];
+    function getProperties(obj) {
+        return Object.keys(obj);
     }
     
     console.log(getProperties(student)); 
     // ["id", "name", "class"]
+
+    // let arr = [];
+        // for (let key in obj) {
+        //     arr.push(key);
+        // }
+        // return arr;
